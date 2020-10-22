@@ -10,10 +10,11 @@ const App = () => {
     <div className = 'app-wrapper' >
      
       <div className='app-wrapper-content'>
-         <Route  render = { ()=> <PassFrame /> } /> 
-         {/* <Route path='/dialogs' render = { ()=> <DialogsContainer/>} />
-         <Route path='/users' render = { ()=> <UsersContainer/>} />      
-         <Route path='/login' render = { ()=> <LoginPage/>} />                   */}
+         <Route  path='/start/' render = { ()=> <PassFrame /> } /> 
+         <Route path='/pokemons/' render = { ()=> <MainFrame/>} />
+        {/* //  <Route path='/users' render = { ()=> <UsersContainer/>} />      
+        //  <Route path='/login' render = { ()=> <LoginPage/>} />                   */} 
+        
       </div>
     </div>
     )};
