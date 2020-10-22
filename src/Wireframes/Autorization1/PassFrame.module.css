@@ -1,10 +1,13 @@
-.wrapper {}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+}
 
 .passInput {
-    margin-left: auto;
-    margin-right: auto;
-    width: 6em;
-    margin-top: 300px;
+    
 }
 
 input {
@@ -21,7 +24,7 @@ input {
     letter-spacing: 0em;
     text-align: left;
     padding: 10px;
-    margin-bottom: 70px;
+    
 }
 
 input:hover {
@@ -29,9 +32,7 @@ input:hover {
 }
 
 .passBtn {
-    margin-left: auto;
-    margin-right: auto;
-    width: 6em
+  margin-top: 50px;
 }
 
 .btn:hover,
@@ -54,7 +55,7 @@ input:hover {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    margin-top: 50px;
+   
 }
 
 .btnLine {

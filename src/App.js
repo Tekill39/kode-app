@@ -12,6 +12,7 @@ const App = () => {
       <div className='app-wrapper-content'>
          <Route  path='/start/' render = { ()=> <PassFrame /> } /> 
          <Route path='/pokemons/' render = { ()=> <MainFrame/>} />
+         <Route path='/sms/' render = { ()=> <SmsFrame/>} />
         {/* //  <Route path='/users' render = { ()=> <UsersContainer/>} />      
         //  <Route path='/login' render = { ()=> <LoginPage/>} />                   */} 
         
