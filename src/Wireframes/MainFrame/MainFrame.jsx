@@ -13,11 +13,13 @@ const MainFrame = (props) => {
     return (
         <div className={classes.wrapper}>
             <div><Header /></div>
+            <div className={classes.wrapperContent}>
             <div className={classes.filters}>
                 <Select />             
             </div>
             <div className={classes.Pokemons}>
                 <Pokemons />
+            </div>
             </div>
         </div >
     );
