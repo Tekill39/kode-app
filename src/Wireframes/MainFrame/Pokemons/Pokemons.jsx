@@ -4,18 +4,14 @@ import pokemon from '../../../content/img/pokemon.jpg' // relative path to image
 
 
 const Pokemons = (props) => {
+    let pokemon = props.pokemon;
     return (
         <div className={classes.pokemonContent}>
             <div className={classes.pokemonsBlock}>
-                <div><img className={classes.pokemonsImg} src={pokemon} alt={pokemon} /></div>
-                <div><span>Pokemon</span></div>
-                <div><span>Artist</span></div>
-
-            </div>
-            <div className={classes.pokemonsBlock}>
-                <div><img className={classes.pokemonsImg} src={pokemon} alt={pokemon} /></div>
-                <div><span>Pokemon</span></div>
-                <div><span>Artist</span></div>
+                
+                <div><img className={classes.pokemonsImg} src={pokemon.imageUrl} alt={pokemon} /></div>
+                <div><span>{pokemon.name} </span></div>
+                <div><span>{pokemon.artist}</span></div>
 
             </div>
         </div>

@@ -13,13 +13,11 @@ const MainFrame = (props) => {
     return (
         <div className={classes.wrapper}>
             <div><Header /></div>
-            <div className={classes.wrapperContent}>
             <div className={classes.filters}>
                 <Select />             
             </div>
             <div className={classes.Pokemons}>
-                <Pokemons />
-            </div>
+           { props.pokemons.map(pokemon => <Pokemons pokemon={pokemon} key={pokemon.id}/>)}
             </div>
         </div >
     );

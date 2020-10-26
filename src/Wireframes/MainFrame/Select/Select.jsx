@@ -5,7 +5,7 @@ import classes from './Select.module.css'
 const Select = (props) => {
     return (
         <div className={classes.formContent}>
-           
+            <div>Select</div>
             <div className={classes.form}>
                 <form action="formdata" method="post" name="type">
                     <p><select name="list1">
