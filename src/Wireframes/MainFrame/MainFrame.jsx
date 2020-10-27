@@ -14,7 +14,8 @@ const MainFrame = (props) => {
         <div className={classes.wrapper}>
             <div><Header /></div>
             <div className={classes.filters}>
-                <Select />             
+               
+            { props.type.map(type => <Select types={types} key={types} subtypes={subtypes} key={subtypes}/>)}                      
             </div>
             <div className={classes.Pokemons}>
            { props.pokemons.map(pokemon => <Pokemons pokemon={pokemon} key={pokemon.id}/>)}
