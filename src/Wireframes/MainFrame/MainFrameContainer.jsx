@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { requestPokemons } from '../../redux/pokemons-reducer';
-
 import { compose } from 'redux';
 import MainFrame from './MainFrame';
+import Preloader from '../Preloader/Preloader';
 
 class MainFrameContainer extends React.Component {
 
@@ -18,8 +18,8 @@ class MainFrameContainer extends React.Component {
     } */
 
     render() {
-        return <>
-            {this.props.isFetching ? <div> Loading... </div> : null}
+        return <>        
+            {this.props.isFetching ? <Preloader/> : null}
             <MainFrame pokemons={this.props.pokemons} />
         </>
     }
