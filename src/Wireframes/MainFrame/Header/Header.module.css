@@ -1,0 +1,34 @@
+.header{
+display:flex;
+justify-content: space-between;
+background-color: #EBEBEB;
+align-items: center;
+height: 61px;
+width: 1032px;
+margin:10px 20px;
+padding: 10px;
+}
+.headerBlock{
+
+}
+
+.loginBlock{
+
+}
+
+button{
+    border: medium none;
+    background-image: none; 
+    background: transparent;
+    background-color: transparent;
+    font-size: 18px;
+
+}
+button:hover,
+button:focus,
+button:active {
+  
+    background-size: 100%;
+    opacity: 0.5;
+    border: none;
+}

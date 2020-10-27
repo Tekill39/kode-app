@@ -1,0 +1,17 @@
+.pokemonContent{
+    display: flex;
+    padding: 10px;
+}
+
+.pokemonsBlock{       
+    background-color:#ECECEC;
+    width: 280px;
+    height: 450px;
+    margin: 50px;
+
+}
+.pokemonsImg{
+    width: 245px;
+    height: 342px;
+    margin: 15px ;
+}
