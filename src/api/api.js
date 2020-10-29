@@ -31,3 +31,17 @@ export const pokemonsAPI = {
         })
     }
 }
+export const authApi = {
+    me() {
+        return
+    },
+    login(email, password = false) {
+        return  {
+            email,
+            password            
+        };
+    }
+    // logout() {
+    //     return instanse.delete(`auth/login`);
+    // }
+}

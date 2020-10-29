@@ -10,8 +10,10 @@ const Pokemons = (props) => {
             <div className={classes.pokemonsBlock}>
                 
                 <div><img className={classes.pokemonsImg} src={pokemon.imageUrl} alt={pokemon} /></div>
+                <div className={classes.pokemonsTxt}>
                 <div><span>{pokemon.name} </span></div>
                 <div><span>{pokemon.artist}</span></div>
+                </div>
 
             </div>
         </div>
