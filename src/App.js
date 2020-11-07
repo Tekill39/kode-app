@@ -1,8 +1,7 @@
 import React from 'react';
-import PassFrame from'./Wireframes/Autorization1/PassFrame';
+import LoginPage from'./Wireframes/Autorization1/login';
 import {Route} from "react-router-dom";
 import SmsFrame from'./Wireframes/Autorization2/SmsFrame';
-import PokemonFrame from'./Wireframes/PokemonFrame/PokemonFrame';
 import MainFrameContainer from './Wireframes/MainFrame/MainFrameContainer';
 
 const App = () => {  
@@ -10,7 +9,7 @@ const App = () => {
     <div className = 'app-wrapper' >
      
       <div className='app-wrapper-content'>
-         <Route  path='/start/' render = { ()=> <PassFrame /> } /> 
+         <Route  path='/start/' render = { ()=> <LoginPage /> } /> 
          <Route path='/pokemons/' render = { ()=> <MainFrameContainer/>} />
          <Route path='/sms/' render = { ()=> <SmsFrame/>} />
         {/* //  <Route path='/users' render = { ()=> <UsersContainer/>} />      

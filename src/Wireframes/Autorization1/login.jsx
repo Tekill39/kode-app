@@ -1,29 +1,3 @@
-// import React from 'react';
-// import classes from './SmsFrame.module.css'
-
-
-
-// const SmsFrame = (props) => {
-
-//     // if (!props.isAuth) return <Redirect to={"/login"} />;
-
-//     return (
-
-//         <div className={classes.wrapper}>
-//             <div className={classes.passInput}>
-//                 <div>
-//                     <input type="text" autoFocus={true} placeholder={'Code from SMS'}/>
-//                 </div>                
-//             </div>
-//             <div className={classes.passBtn}>
-//                 <button className={classes.btn}>
-//                 </button>                
-//             </div>
-//         </div>
-
-//     );
-// }
-// export default SmsFrame;
 import React from 'react';
 import { reduxForm } from 'redux-form';
 import { Field } from 'redux-form';
@@ -38,10 +12,14 @@ const LoginForm = (props) => {
     return (
         <form onSubmit={props.handleSubmit}>
             <div>
-                <Field placeholder={"sms"} component={Input}
-                    validate={[required]} name={"sms"} />
+                <Field placeholder={"Email"} component={Input}
+                    validate={[required]} name={"email"} />
             </div>
-                        
+            <div>
+                <Field placeholder={"Password"} component={Input} type={"password"}
+                    validate={[required]} name={"password"} />
+            </div>
+            
             {props.error && <div className={style.formSummaryError}>
                 {props.error}
             </div>
@@ -57,10 +35,10 @@ const LoginReduxForm = reduxForm({
 
 const Login = (props) => {
     const onSubmit = (formData) => {
-        props.login(formData.sms);
+        props.login(formData.email, formData.password);
     }
     if (props.isProcess) {
-        return <Redirect to={"/pokemons"} />
+        return <Redirect to={"/sms"} />
     }
     return <div>
         <h1>LOGIN</h1>
@@ -71,3 +49,6 @@ const mapStateToProps = (state) => ({
     isProcess: state.auth.isProcess
 })
 export default connect(mapStateToProps, { login })(Login);
+
+
+

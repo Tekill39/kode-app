@@ -7,11 +7,15 @@
     background-color:#ECECEC;
     width: 280px;
     height: 450px;
-    margin: 50px;
+   
 
 }
 .pokemonsImg{
     width: 245px;
     height: 342px;
     margin: 15px ;
+}
+span{
+    padding: 10px;
+    margin-left: 10px;
 }

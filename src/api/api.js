@@ -6,7 +6,7 @@ const instance = axios.create({
 
 
 export const pokemonsAPI = {
-    getPokemons(currentPage = 1, pageSize = 4, types='', subtype='') {
+    getPokemons(currentPage = 1, pageSize = 8, types='', subtype='') {
         return instance.get(`cards?page=${currentPage}&pageSize=${pageSize}&types=${types}&subtype=${subtype}`)
             .then(response => {
                 return response;
